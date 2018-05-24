@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>효과적으로 표현 적용시키지 위한 CSS 기법</title>
+<style type="text/css">
+    body {color:red} /* 몸체 안에 무조건 적용 red */
+    /* 아래 h1, p 속성은 굳이 red로 정의 안해도 된다.
+      => 여기선 상속을 이용하여 적용 가능하다!!
+    h1 {color:red;}
+    p {color:red;}
+    */
+    /* 여기서는 div 태그안에 사용하면 lime 색깔로 사용함 */
+    div {color:lime;}
+</style>
+</head>
+<body>
+<div>
+    <h1>Second style</h1>
+    <p>style태그를 이용하여 스타일을 더한다.</p>
+</div>
+</body>
+</html>

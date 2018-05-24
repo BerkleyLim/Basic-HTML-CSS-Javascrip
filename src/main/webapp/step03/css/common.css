@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* @import url : 다른 CSS 파일을 불려온다.*/
+@import url('board.css'); /* 게시판 */
+@import url('table.css'); /* 표 */
+
+h1 {font-size:24px;}
+p {color:red;}

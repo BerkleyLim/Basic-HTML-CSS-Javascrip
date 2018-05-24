@@ -1,0 +1,59 @@
+<!-- 
+    HTML5의 <video>를 XHTML 독타입 넣고 사용!
+    <doctype 버전별의 문법>
+    1) HTML 5
+      <!DOCTYPE html>
+    
+    2) XHTML
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        
+    3) HTML 4.01
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 4.01 Transitional//EN" 
+        "http://www.w3.org/TR/html4/loose.dtd">
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+<!-- <head> 안에서는 페이지를 보여 주기 위해 필요한 정보들이 담겨 있음 -->
+<head>
+<!-- 인코딩 타입 선언 -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<!-- 브라우저 상단웹에 페이지 제목을 보여줌 -->
+<title>p 태그 타입</title>
+
+<!-- 구글 등의 검색 로봇에게 이페이지를 알릴지를 결정 -->
+<meta name="robots" content="all"/>
+
+<!-- 해당 페이지에 어떤 컨텐츠가 들어 있는지 알려줌 -->
+<meta name="keywords" content="디자인에이젼시, 웹디자인, CI디자인" />
+
+<!-- 해당페이지가 어떤 컨텐츠인지 설명해줌 -->
+<meta name="description" content="웹디자인을 진행하는 회사" />
+
+<!-- 이 페이지를 누가 만들었는지 알려줌 -->
+<meta name="author" content="eusoojung" />
+
+<!-- 이페이지에 필요한 파일(CSS)를 링크해줌 -->
+<link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
+
+<!-- 이 페이지에 필요한 스크립트파일을 처리 -->
+<script type="text/javascript" src="ui.js"> </script>
+</head>
+<body>
+
+<!-- <paragraph> 문장  : 문장, 단락-->
+<p>지난 2005년 엄청난 규모의 허리케인을 카트리나가 미국 남부 지역을 강타했다.
+최고 시속 280km의 강풍과 엄청난 양의 폭우를 동반한 카트리나로 인해 2000억 달러 이상의 재산 피해가 발생했으며
+1000명 이상의 사망자가 발생했다.<br/> 한동안 미국 경제가 침제 되고 세계 증시에 까지 영향을 미쳤을 정도이다.
+수만 명의 이재민이 살 곳을 잃고 당장 노숙을 해야 하는 처지에 놓였다.</p>
+
+<p>지난 2005년 엄청난 규모의 허리케인 카트리나가 미국 남부 지역을 강타했다. 최고 시속 280km의 강풍과 엄청난 양의
+폭우를 동반한 카트리나로 인해 2000억 달러 이상의 재산 피해가 발생했으며 1000명 이상의 사망자가 발생했다.</p>
+<p>한동안 미국 경제가 침제 되고 세계 증시에 까지 영향을 미쳤을 정도이다. 수만 명의 이재민이 살 곳을 잃고 
+당장 노숙을 해야 하는 처지에 놓였다.</p>
+</body>
+</html>

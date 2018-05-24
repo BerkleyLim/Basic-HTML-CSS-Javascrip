@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hello world!</title>
+<!-- 여러 CSS파일에서, 파일 처리 방식
+  1) HTML은 위에서 아래로 차례대로 처리
+  2) 하나의 요소에 여러 명령이 중복 시 덮어 씌어짐(override)
+    - <style> 안과 CSS 파일 안에서도 똑같이 적용
+    - <style type="text/css">
+         h1 {color:black}
+         p {color:yellow;}
+         p {color:red;}
+      </style> // 결과 : h1 색깔 : black, p 색깔 : red
+     - CSS 파일안
+         h1 {color:black}
+         p {color:black}
+         p {color:lime}
+         p {color:red} // 결과 : h1 색깔 : black, p 색깔 : red
+  3) 위에서 아래로 덮어지게(cascading)적용
+  4) @import 된 스타일도 Cascading 됨
+  5) 순서 잘 사용할 것!
+ -->
+<link rel="stylesheet" href="css/basic.css" type="text/css" media="all" /> <!-- 처리순서 1번 -->
+<link rel="stylesheet" href="css/table.css" type="text/css" media="all" /> <!-- 처리순서 2번 -->
+<link rel="stylesheet" href="css/board.css" type="text/css" media="all" /> <!-- 처리순서 3번 -->
+</head>
+<body>
+<h1>Second style</h1>
+<p>style태그를 이용하여 스타일을 더한다.</p>
+</body>
+</html>
