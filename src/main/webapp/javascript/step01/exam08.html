@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fruit</title>
+<script>
+    function changeCaption(cap) {
+    	document.getElementById("fruit").innerText = cap;
+    }
+</script>
+</head>
+<body>
+    <!-- para라는 id를 지정 -->
+    <h1 id="fruit">과일</h1>
+
+    <form>
+    <!-- onClick이라는 속성에서 javascript의 함수를 호출하는 역할을 한다! -->
+        <input type="button" value="Apple" onClick="changeCaption('Apple')">
+        <input type="button" value="Orange" onClick="changeCaption('Orange')">
+    </form>
+</body>
+</html>

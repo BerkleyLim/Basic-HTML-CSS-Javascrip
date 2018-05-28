@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>scripttag</title>
+</head>
+<body>
+    <p>태그로 자성한 문단입니다.</p>
+    <!-- 여기는 스크립트문 -->
+    <script>
+        document.write("안녕하세요.");
+    </script>
+    
+    <!-- type으로 javascript라고 밝혀라! -->
+    <pre>
+      [스크립트 종류]
+       : text/javascript, text/ecmascript, text/vbscript, text/jscript
+      
+      &lt;noscript&gt; : 브라우저가 스크립트를 인식하지 못할 때 대신 출력할 내용을 지정
+                            (주로 간단한 안내문 작성)
+    </pre>
+    <script type="text/javascript">
+    <!--
+        document.write("안녕하세요");
+    -->
+    <noscript>
+        <p> 이 브라우저는 자바스크립트를 지원하지 않습니다 </p>
+    </noscript>
+    </script>
+</body>
+</html>
